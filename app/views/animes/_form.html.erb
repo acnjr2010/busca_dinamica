@@ -13,30 +13,30 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :anime_name %>
+    <%= form.text_field :name, id: :anime_name, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :year %>
-    <%= form.number_field :year, id: :anime_year %>
+    <%= form.number_field :year, id: :anime_year, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :episodes %>
-    <%= form.number_field :episodes, id: :anime_episodes %>
+    <%= form.number_field :episodes, id: :anime_episodes, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :manga %>
-    <%= form.check_box :manga, id: :anime_manga %>
+    <%= form.check_box :manga, id: :anime_manga, class: 'checkbox' %>
   </div>
 
   <div class="field">
     <%= form.label :author %>
-    <%= form.text_field :author, id: :anime_author %>
+    <%= form.text_field :author, id: :anime_author, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'New Anime', :class => 'btn btn-primary pull-right' %>
   </div>
 <% end %>
