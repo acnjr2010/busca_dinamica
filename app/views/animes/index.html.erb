@@ -23,7 +23,7 @@
         <td><%= anime.name %></td>
         <td><%= anime.year %></td>
         <td><%= anime.episodes %></td>
-        <td><%= anime.manga %></td>
+        <td><%= anime.manga == true ? "Yes" : "No" %></td>
         <td><%= anime.author %></td>
         <td><%= link_to 'Show', anime %></td>
         <td><%= link_to 'Edit', edit_anime_path(anime) %></td>
