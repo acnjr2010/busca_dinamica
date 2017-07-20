@@ -1,13 +1,14 @@
-<%= form_tag(animes_path, :method => "get") do %>
+<%= form_tag animes_path, method: :get, class: 'form-inline' do %>
   <%= label_tag(:name, "Name:") %>
-  <%= text_field_tag(:name) %>
+  <%= text_field_tag :name, nil, class: 'form-control' %>
   <%= label_tag(:year, "Year:") %>
-  <%= text_field_tag(:year) %>
+  <%= text_field_tag :year, nil, class: 'form-control' %>
   <%= label_tag(:episodes, "Episodes:") %>
-  <%= text_field_tag(:episodes) %>
+  <%= text_field_tag :episodes, nil, class: 'form-control' %>
   <%= label_tag(:manga, "Mangá:") %>
-  <%= select_tag :manga, options_for_select([true, false]), include_blank: true %>
+  <%= select_tag :manga, options_for_select([true, false]), include_blank: true, class: 'form-control' %>
   <%= label_tag(:author, "Author:") %>
-  <%= text_field_tag(:author) %>
-  <%= submit_tag("Search") %>
+  <%= text_field_tag :author, nil, class: 'form-control' %>
+  <br><br>
+  <%= submit_tag "Search", class: "btn btn-primary pull-right" %>
 <% end %>
