@@ -1,0 +1,13 @@
+<%= form_tag(animes_path, :method => "get") do %>
+  <%= label_tag(:name, "Name:") %>
+  <%= text_field_tag(:name) %>
+  <%= label_tag(:year, "Year:") %>
+  <%= text_field_tag(:year) %>
+  <%= label_tag(:episodes, "Episodes:") %>
+  <%= text_field_tag(:episodes) %>
+  <%= label_tag(:manga, "Mangá:") %>
+  <%= select_tag :manga, options_for_select([true, false]), include_blank: true %>
+  <%= label_tag(:author, "Author:") %>
+  <%= text_field_tag(:author) %>
+  <%= submit_tag("Search") %>
+<% end %>
