@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  year: 1
+  episodes: 1
+  manga: false
+  author: MyString
+
+two:
+  name: MyString
+  year: 1
+  episodes: 1
+  manga: false
+  author: MyString
